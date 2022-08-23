@@ -1,0 +1,97 @@
+/* ===== Team styles ===== */
+.container {
+    &--team {
+        background-color: $background-color-team;
+        margin-top: 94px;
+    }
+}
+
+.team {
+    &__header {
+        padding-top: 94px;
+        padding-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: $letter-spacing-all;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &__card {
+        margin: 0;
+        max-width: 270px;
+        max-height: 428px;
+        background: $background-color-body;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__card-desc {
+        padding-top: 30px;
+    }
+
+    &__card-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.188;
+        text-align: center;
+        letter-spacing: $letter-spacing-all;
+        color: $font-color-headers;
+
+    }
+
+    &__card-workplace {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.188;
+        text-align: center;
+        letter-spacing: $letter-spacing-all;
+        color: $font-color-contact;
+        margin-top: 10px;
+    }
+
+    &__social-items {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 206px;
+        padding-top: 16px;
+        padding-bottom: 18px;
+    }
+
+    &__social-button {
+        display: inline-flex;
+        padding: 12px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: $icon-base-color;
+        transition-property: background-color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $icon-background-color;
+            fill: $font-color-white;
+        }
+    }
+}
+
+/* ===== End team styles ===== */
