@@ -1,0 +1,46 @@
+/* ===== We do styles ===== */
+.we-do {
+    width: 1200px;
+
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: $letter-spacing-all;
+        color: $font-color-headers;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__card {
+        position: relative;
+    }
+
+    &__card-desc {
+        position: absolute;
+        display: flex;
+        width: 370px;
+        height: 70px;
+        top: 224px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: $letter-spacing-all;
+        text-transform: uppercase;
+        color: $font-color-white;
+        background: rgba(47, 48, 58, 0.8);
+    }
+}
+/* ===== End we do styles ===== */

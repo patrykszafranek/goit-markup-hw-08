@@ -1,0 +1,43 @@
+/* ===== Clients styles ===== */
+.clients {
+    padding-top: 94px;
+
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: $letter-spacing-all;
+        padding-bottom: 50px;
+        margin: 0;
+        color: $font-color-headers;
+    }
+
+    &__list {
+        display: flex;
+        margin-bottom: 94px;
+    }
+
+    &__item {
+        border: 1px solid $icon-base-color;
+        border-radius: 4px;
+        display: flex;
+        width: 170px;
+        height: 92px;
+        margin: 0 15px;
+        justify-content: center;
+        align-items: center;
+        fill: $icon-base-color;
+        transition: fill 250ms, border 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: $icon-background-color;
+            border-color: $icon-background-color;
+            cursor: pointer;
+        }
+    }
+}
+
+/* ===== End clients styles ===== */

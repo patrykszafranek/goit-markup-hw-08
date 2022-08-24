@@ -1,0 +1,95 @@
+/* ===== Projects Grid Styles ===== */
+.grid {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        max-width: 1200px;
+        padding: 0;
+        margin-bottom: 94px;
+    }
+
+    &__item {
+        position: relative;
+        width: 370px;
+
+        &:hover,
+        &:focus {
+            background: $font-color-white;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+            transition-delay: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+
+}
+
+.card {
+    margin: 0;
+    position: relative;
+
+    &__overlay {
+        position: relative;
+        overflow: hidden;
+        height: 294px;
+    }
+
+    &__overlay-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 49px;
+        padding-left: 24px;
+        transform: translateY(100%);
+        transition: transform 250ms;
+    }
+
+    &__overlay-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: $font-color-white;
+    }
+
+    &__image {
+        display: block;
+    }
+
+    &__info {
+        padding: 20px 24px;
+        border-left: 1px solid $background-color-three;
+        border-right: 1px solid $background-color-three;
+        border-bottom: 1px solid $background-color-three;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $font-color-headers;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+        color: $font-color-contact;
+    }
+
+}
+
+.card:hover .card__overlay-box {
+    transform: translatex(0);
+    background: rgba(33, 150, 243, 0.9);
+    transition-delay: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== End Projects Grid Styles ===== */
