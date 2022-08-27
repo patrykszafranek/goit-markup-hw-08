@@ -11,7 +11,8 @@
 
     &__item {
         position: relative;
-        width: 370px;
+        overflow: hidden;
+        margin-bottom: 30px;
 
         &:hover,
         &:focus {
@@ -57,8 +58,15 @@
         color: $font-color-white;
     }
 
+    &__picture {
+        width: 100%;
+    }
+
     &__image {
         display: block;
+        max-width: 450px;
+        width: 100%;
+        height: auto;
     }
 
     &__info {
@@ -90,6 +98,49 @@
     background: rgba(33, 150, 243, 0.9);
     transition-delay: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .grid {
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .grid {
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .grid {
+        &__list {
+            display: flex;
+            column-gap: 30px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .card {
+        &__image {
+            max-width: 370px;
+        }
+    }
 }
 
 /* ===== End Projects Grid Styles ===== */

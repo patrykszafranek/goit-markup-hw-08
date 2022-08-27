@@ -1,14 +1,11 @@
 /* ===== Button Styles ===== */
 .buttons {
+    padding: 0 15px;
+
     &__list {
         display: flex;
-        justify-content: center;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: 8px;
-        }
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     &__button {

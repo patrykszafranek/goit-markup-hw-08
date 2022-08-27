@@ -1,7 +1,11 @@
 /* ===== Footer styles ===== */
 .footercontent {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 60px;
+    text-align: center;
 }
 
 .footer {
@@ -14,6 +18,7 @@
         font-size: 26px;
         line-height: 1.192;
         letter-spacing: $letter-spacing-all;
+        margin-bottom: 20px;
     }
 
     &__link {
@@ -31,6 +36,7 @@
         line-height: 1.714;
         letter-spacing: 0.03em;
         color: $font-color-white;
+
     }
 
     &__address-link {
@@ -52,9 +58,8 @@
 
 /*-----------------------------*/
 .footer-social {
-    padding-left: 70px;
-    margin-right: 78px;
-    // margin-top: 72px;
+    // padding-left: 70px;
+    // margin-right: 78px;
 
     &__header {
         font-weight: 700;
@@ -96,8 +101,10 @@
 /* ---------------------------------- */
 .footer-newsletter {
     display: flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 12px;
+    justify-content: center;
 
     &__header {
         font-weight: 700;
@@ -160,5 +167,45 @@
         }
     }
 }
+
+@media screen and (min-width: 360px) and (max-width: 767px) {}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footercontent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0px auto;
+        justify-content: center;
+    }
+
+    .footer-newsletter {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footercontent {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+    }
+
+    .footer-newsletter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__btn {
+            margin-top: 34px;
+        }
+    }
+
+}
+
 
 /* ===== End Footer styles ===== */

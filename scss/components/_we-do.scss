@@ -2,6 +2,10 @@
 .we-do {
     width: 1200px;
 
+    &--container {
+        margin-bottom: 94px;
+    }
+
     &__header {
         font-weight: 700;
         font-size: 36px;
@@ -9,38 +13,50 @@
         text-align: center;
         letter-spacing: $letter-spacing-all;
         color: $font-color-headers;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     &__list {
         display: flex;
+        column-gap: 30px;
     }
 
     &__item {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
     }
 
     &__card {
-        position: relative;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__card-desc {
-        position: absolute;
-        display: flex;
-        width: 370px;
-        height: 70px;
-        top: 224px;
-        align-items: center;
-        justify-content: center;
         font-weight: 700;
         font-size: 14px;
-        line-height: 1.14;
+        line-height: 1.17;
         letter-spacing: $letter-spacing-all;
         text-transform: uppercase;
         color: $font-color-white;
-        background: rgba(47, 48, 58, 0.8);
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .we-do {
+        &--container {
+            display: none;
+        }
+    }
+}
+
 /* ===== End we do styles ===== */

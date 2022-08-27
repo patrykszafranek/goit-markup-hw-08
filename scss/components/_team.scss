@@ -2,13 +2,21 @@
 .container {
     &--team {
         background-color: $background-color-team;
-        margin-top: 94px;
+
     }
 }
 
 .team {
+    &__picture {
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
     &__header {
-        padding-top: 94px;
+        padding-top: 60px;
         padding-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
@@ -18,23 +26,28 @@
     }
 
     &__list {
-        display: flex;
-        gap: 30px;
-        justify-content: center;
+        column-gap: 30px;
+
     }
 
-    &__card {
-        margin: 0;
-        max-width: 270px;
-        max-height: 428px;
-        background: $background-color-body;
+    &__item {
+        background-color: $background-color-body;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    &__card-desc {
-        padding-top: 30px;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 16px;
     }
 
     &__card-name {
@@ -54,11 +67,15 @@
         text-align: center;
         letter-spacing: $letter-spacing-all;
         color: $font-color-contact;
-        margin-top: 10px;
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
     }
 
     &__social-items {
-        margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -67,7 +84,7 @@
         gap: 10px;
         width: 206px;
         padding-top: 16px;
-        padding-bottom: 18px;
+
     }
 
     &__social-button {
@@ -90,6 +107,67 @@
         &:active {
             background-color: $icon-background-color;
             fill: $font-color-white;
+        }
+    }
+
+    &__social-icon {
+        width: auto;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .team {
+        &__title {
+            padding-bottom: 30px;
+        }
+
+        &__list {
+            column-gap: 30px;
+        }
+
+        &__item {
+            padding-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team {
+        &__title {
+            padding-bottom: 30px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            justify-content: center;
+        }
+
+        &__item {
+            flex-basis: calc(50% - 15px);
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        &__list {
+            display: flex;
+        }
+
+        &__img {
+            max-width: 279px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__social_items {
+            padding-bottom: 18px;
         }
     }
 }

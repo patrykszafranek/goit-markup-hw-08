@@ -17,13 +17,13 @@
 </head>
 
 <body>
-    <header class="container">
-        <div class="header">
+    <header class="header">
+        <div class="container container--header">
             <a href="#" class="logo"><span class="logo--decor">Web</span>Studio</a>
             <nav>
                 <ul class="menu">
                     <li class="menu__item">
-                        <a class="menu__link" href="index.html">Agencja</a>
+                        <a class="menu__link " href="index.html">Agencja</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link menu__link--active" href="portfolio.html">Portfolio</a>
@@ -33,6 +33,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg>
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
             <div class="address">
                 <a class="address__link" href="mailto:info@devstudio.com"><svg class="address__icon" width="16"
                         height="12">
@@ -84,6 +89,21 @@
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                        ../images/mobile/p1.jpg   1x,
+                                                        ../images/mobile/p1x2.jpg 2x
+                                                      " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                        ../images/tablet/p1.jpg   1x,
+                                                        ../images/tablet/p1x2.jpg 2x
+                                                      " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                       ../images/p1.jpg 1x,
+                                                       ../images/p1x2.jpg x2
+                                                      " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p1.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -95,7 +115,6 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p1.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
@@ -110,6 +129,21 @@
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p2.jpg   1x,
+                                                                                ../images/mobile/p2x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p2.jpg   1x,
+                                                                                ../images/tablet/p2x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p2.jpg 1x,
+                                                                               ../images/p2x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p2.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -121,19 +155,35 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p2.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
                                     Grafika New Orlean vs Golden Star
                                 </h3>
-                                <p class="card__desc">Dizajn</p>
+                                <p class="card__desc">
+                                    Dizajn
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p3.jpg   1x,
+                                                                                ../images/mobile/p3x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p3.jpg   1x,
+                                                                                ../images/tablet/p3x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p3.jpg 1x,
+                                                                               ../images/p3x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p3.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -145,19 +195,35 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p3.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
                                     Restauracja Seafood
                                 </h3>
-                                <p class="card__desc">Aplikacja</p>
+                                <p class="card__desc">
+                                    Aplikacja
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p4.jpg   1x,
+                                                                                ../images/mobile/p4x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p4.jpg   1x,
+                                                                                ../images/tablet/p4x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p4.jpg 1x,
+                                                                               ../images/p4x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p4.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -169,19 +235,35 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p4.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
                                     Projekt Prime
                                 </h3>
-                                <p class="card__desc">Marketing</p>
+                                <p class="card__desc">
+                                    Marketing
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p5.jpg   1x,
+                                                                                ../images/mobile/p5x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p5.jpg   1x,
+                                                                                ../images/tablet/p5x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p5.jpg 1x,
+                                                                               ../images/p5x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p5.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -193,19 +275,35 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p5.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
                                     Projekt Boxes
                                 </h3>
-                                <p class="card__desc">Aplikacja</p>
+                                <p class="card__desc">
+                                    Aplikacja
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p6.jpg   1x,
+                                                                                ../images/mobile/p6x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p6.jpg   1x,
+                                                                                ../images/tablet/p6x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p6.jpg 1x,
+                                                                               ../images/p6x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p6.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -217,7 +315,6 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p6.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
@@ -232,6 +329,21 @@
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p7.jpg   1x,
+                                                                                ../images/mobile/p7x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p7.jpg   1x,
+                                                                                ../images/tablet/p7x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p7.jpg 1x,
+                                                                               ../images/p7x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p7.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -243,19 +355,35 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p7.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
                                     Magazyn Limited Edition
                                 </h3>
-                                <p class="card__desc">Dizajn</p>
+                                <p class="card__desc">
+                                    Dizajn
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p8.jpg   1x,
+                                                                                ../images/mobile/p8x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p8.jpg   1x,
+                                                                                ../images/tablet/p8x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p8.jpg 1x,
+                                                                               ../images/p8x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p8.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -267,19 +395,35 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p8.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
                                     Projekt LAB
                                 </h3>
-                                <p class="card__desc">Marketing</p>
+                                <p class="card__desc">
+                                    Marketing
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="grid__item">
                         <figure class="card">
                             <div class="card__overlay">
+                                <picture>
+                                    <source srcset="
+                                                                                ../images/mobile/p9.jpg   1x,
+                                                                                ../images/mobile/p9x2.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                                    <source srcset="
+                                                                                ../images/tablet/p9.jpg   1x,
+                                                                                ../images/tablet/p9x2.jpg 2x
+                                                                              " media="(max-width: 1199px)" />
+                                    <source srcset="
+                                                                               ../images/p9.jpg 1x,
+                                                                               ../images/p9x2.jpg x2
+                                                                              " media="(min-width: 1200px)" />
+                                    <img class="card__image" src="../images/p9.jpg" width="370" height="294" />
+                                </picture>
                                 <div class="card__overlay-box">
                                     <p class="card__overlay-text">
                                         Technocrack jest popularną
@@ -291,13 +435,14 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <img class="card__image" src="images/p9.jpg" width="370" height="294" />
                             </div>
                             <figcaption class="card__info">
                                 <h3 class="card__header">
                                     Growing Business
                                 </h3>
-                                <p class="card__desc">Aplikacja</p>
+                                <p class="card__desc">
+                                    Aplikacja
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
@@ -369,6 +514,42 @@
             </form>
         </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-toggle__svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__lists">
+            <ul class="mobile-menu">
+                <li><a href="index.html" class="mobile-menu__link">Agencja</a></li>
+                <li>
+                    <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+                </li>
+                <li><a href="" class="mobile-menu__link">Kontakt</a></li>
+            </ul>
+            <ul class="mobile-menu__contacts-list">
+                <li class="mobile-menu__contacts-elem">
+                    <a class="mobile-menu__telephone" href="tel:+48111111111">+48 111 111 111</a>
+                </li>
+                <li class="mobile-menu__contacts-elem">
+                    <a class="mobile-menu__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+
+                <ul class="mobile-menu__social-list">
+                    <li><a class="mobile-menu__social-link" href="">Instagram</a></li>
+                    <span class="mobile-menu__social-link-line">|</span>
+                    <li><a class="mobile-menu__social-link" href="">Twitter</a></li>
+                    <span class="mobile-menu__social-link-line">|</span>
+                    <li><a class="mobile-menu__social-link" href="">Facebook</a></li>
+                    <span class="mobile-menu__social-link-line">|</span>
+                    <li><a class="mobile-menu__social-link" href="">Linkedin</a></li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
